@@ -1,0 +1,4 @@
+8:35 Goes over the outline of MERN, being react on the front end/client side,
+node.js on the back-end,
+and monogoDB as our database
+
