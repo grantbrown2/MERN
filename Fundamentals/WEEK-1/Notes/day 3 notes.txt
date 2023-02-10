@@ -1,0 +1,7 @@
+8:10 overview from yesterdays material / JSX & Babel overview
+DIV OR <> </> are "parent elements" and you may only have one
+export default "component name" *MUST ALWAYS EXPORT*
+then import on the app.js and say "import Component from './components/Component';"
+"rafce" auto imports React from 'react' similar to the ! in html
+
+
