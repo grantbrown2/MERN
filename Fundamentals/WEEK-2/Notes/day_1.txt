@@ -1,0 +1,9 @@
+OFFICE HOUR: For & while loop overview
+
+break ends the loop if condition is met
+continue skips over the listed conditional
+
+LECTURE: Hooks / useState overview 
+compairable to session in python
+real example: Doing form validations in the moment instead of on submission
+8:45 going over useState
