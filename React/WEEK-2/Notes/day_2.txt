@@ -1,1 +1,6 @@
 Activity Hour: Using Bootstrap with React
+
+
+Lecture: Reviewing Hook Form
+can use number for a form type example useage would be age 
+8:35 going over the e.target.event
