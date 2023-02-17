@@ -1,0 +1,60 @@
+Activity Hour: "Gray's Hour"
+7:10 going over Events
+
+Lecture: Ternary Operators, Validation functions
+8:02 Going over how to fix form assignment
+
+instead of doing this: 
+const [FirstName, setFirstName] = useState("");
+const [LastName, setLastName] = useState("");
+const [email, setEmail] = useState("");
+const [password, setPassword] = useState("");
+const [ConfirmPassword, setConfirmPassword] = useState("");
+const [hasBeenSubmitted, setHasBeenSubmitted] = useState(false);
+const [FirstNameError, setFirstNameError] = useState("");
+const [LastNameError, setLastNameError] = useState("");
+const [EmailError, setEmailError] = useState("");
+const [PasswordError, setPasswordError] = useState("");
+use this instead: 
+const [users, setUsers] = useState({
+    FirstName: "",
+    LastName: "",         // this must be the same name as the name on the form
+    Email: ""
+})
+THIS IS SHOWN AT 8:12
+
+8:25
+const changeHandler = (e) => {
+    setUsers({...users, [e.target.name]: e.target.value})
+}
+So to simplify your changeHandler its basically
+setter({...getter, [key name] : key value] })
+
+
+
+onChange={changeHandler}
+ternary operator example for validation:
+movies.movieTitle && movies.movieTitle.length < 3 ? <p> Movie title required</p> : ''
+
+8:18 going over ternary operators
+condition is before ? after is for true
+: is for false
+
+
+8:40 
+const movieValidation = (e) => {
+    let isValid = true
+    if (movies.movieTitle.length < 3 || moveis.genre.length < 3 || movie.releaseYear < 1900 || movies.ticketsSold < 3) {
+        isValid = false
+        console.log({"There is an error"})
+        return isValid
+    } else {
+        console.log("no error")
+        return isValid
+    }
+}
+
+8:57 
+console.log(`Movie: ${JSON.stringify(movies)}`)
+compaireable to __repr__ in python
+
