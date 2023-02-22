@@ -1,0 +1,41 @@
+Styles Reading:
+
+When using inline styles with JSX property names must be camel cased when used with objects.
+also values like "12px" must be a string.
+My prefered method is using CSS Modules
+import styles from './Component.module.css';
+
+Iterating With Map:
+
+map() will pass each element from the arry one at a time
+example given: 
+const nums = [1, 2, 3, 4, 5];
+
+const newNums = nums.map( (num) => {
+    return num * 2;
+} );
+
+console.log( newNums ); // logs [2, 4, 6, 8, 10]
+
+"In general, you can use the map method whenever
+you want to transform each element of an array according to a function."
+
+map creates a new array, will not change the original array.
+another example:
+const nums = [1, 2, 3, 4, 5];
+
+function double(num) {
+    return num * 2;
+}
+
+const newNums = nums.map( double );
+
+console.log( newNums ); // logs [2, 4, 6, 8, 10]
+
+
+
+Lecture: briefly went over last weeks material with map() & Lifting State
+8:41: Lifting with State
+idx is a unqiue identifier 
+"siblings" cannot pass data to each other, data flows down, you must lift state up to the
+'parent' and then pass it down to the child
