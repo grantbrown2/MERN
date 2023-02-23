@@ -1,0 +1,14 @@
+Lecture: APIs
+Application Programming Interface
+API allows us to gather information from somewhere
+Rest API specific way of gathering information
+8:25 asynchronous
+going from top to bottom if a function is called then
+it will read the function (skips function untill called)
+8:30
+going over useEffect and fetch, .then .catch
+
+Week 3 day 2 Lecture
+caden made a video going over api if needed
+
+8:46 whatever is in [] is essentially an event listener

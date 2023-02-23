@@ -29,10 +29,8 @@ const changeHandler = (e) => {
 }
 So to simplify your changeHandler its basically
 setter({...getter, [key name] : key value] })
-
-
-
 onChange={changeHandler}
+
 ternary operator example for validation:
 movies.movieTitle && movies.movieTitle.length < 3 ? <p> Movie title required</p> : ''
 

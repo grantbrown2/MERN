@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+form {
+    margin: 10px auto;
+}
+.box {
+    margin: 5px 5px;
+}
+.boxes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
