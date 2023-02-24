@@ -1,0 +1,30 @@
+"npm install styled-components" FOR styled components *very usefull*
+there is also styletron - review by looking at css in js
+
+.then is used to handle a successful fulfillment of a promise
+.catch is used to handle the rejection of a promise
+the `${}` syntax is used to turn a varible into a string
+FROM CHATGPT 
+"Template literals are a convenient way to construct strings that include variable values or complex expressions.
+They are especially useful when you need to create multi-line strings or include special characters,
+such as line breaks or tabs, in your strings."
+
+Activity hour/Grays hour: 
+I need to rewatch this video
+
+
+Lecture: 
+
+8:15: useEffect overview
+    Promises allow us to run things asynchronously, meaning it will start the process
+    but allows the program to keep running *for preformance*
+
+Note from gray: 
+    Never have your setter in the promise at the same time with state in dependency
+    array  in the useEffect. It will trigger an infinite loop - *NOTED!
+
+8:35: Going over Axios
+    replaces fetch with axios 
+
+8:45: Shows a different way to do useEffect
+

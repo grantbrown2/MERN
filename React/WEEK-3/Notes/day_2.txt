@@ -1,4 +1,4 @@
-Lecture: APIs
+Lecture: APIs, useEffect, Promises
 Application Programming Interface
 API allows us to gather information from somewhere
 Rest API specific way of gathering information
