@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+}
+.container-2 {
+  display: flex;
+}
+.App, .Header, .Navigation, .Main, .SubContents, .Advertisement {
+  margin: auto;
+  border: black 2px solid;
+}
+.App {
+  margin: 25px auto;
+  padding: 25px;
+  height: 750px ;
+  width: 90%;
+  background-color: #dddddd;
+}
+.Header {
+  background-color: #6aa84f;
+  height: 100px;
+}
+.Navigation {
+  background-color: #6fa8dc;
+  width: 175px;
+  height: 500px;
+  margin: 25px 25px 0 0;
+}
+.Main {
+  margin: 25px 0;
+  width: 100%;
+  height: 625px;
+  background-color: #e06666;
+}
+.SubContents {
+  background-color: #ffd966;
+  width: 100%;
+  height: 400px;
+  margin: 25px;
+}
+.Advertisement {
+  background-color: #b4a7d6;
+  height: 100px;
+  margin: 25px;
+}
