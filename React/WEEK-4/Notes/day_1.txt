@@ -1,1 +1,15 @@
 Lecture: Going over Routing, and anatomy of a URL
+8:15: 
+    Anatomy Of a URL / Query Parameters
+8:25: 
+    React Router
+        Handles the routes within our website 
+        npm install react-router-dom
+        * Can wrap the App within BrowserRouter inside the index.js *
+8:35:
+    Route & Link
+8:50:
+    Using forms with routes
+8:56:
+    useNavigate
+        
