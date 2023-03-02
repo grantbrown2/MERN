@@ -1,0 +1,15 @@
+Lecture: Express Intro
+8:10
+    Visual for Express
+        Express is on the server side while react is client side
+        MonogoDB is our database
+8:15
+    Installing Express
+        npm init -y
+        npm install express
+8:26
+    Nodeman overview
+        npm install -g nodeman
+8:33
+    Postman overview
+        

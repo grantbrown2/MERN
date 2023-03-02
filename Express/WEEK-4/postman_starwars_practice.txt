@@ -1,0 +1,6 @@
+I decided to go with star wars instead of pokemon, I don't really like pokemon
+https://swapi.dev/api/people/22 - retreives Boba Fett 
+https://swapi.dev/api/people/4 - retreives Darth Vader
+https://swapi.dev/api/people/32 - retireves Qui-Gon Jinn
+https://swapi.dev/api/planets/4 - retreives the planet Hoth
+https://swapi.dev/api/planets/11 - retrieves the planet Geonosis
