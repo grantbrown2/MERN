@@ -1,0 +1,19 @@
+Activity Hour: FakerAPI Assignment
+
+
+Lecture: MongoDB overview
+8:12:
+    Intro to MongoDB
+*:20
+    MongoDB Compass
+8:26:
+    Mongoose overview
+        breaks down the database into models* 
+        connects mongoDB to express
+8:35:
+    Going over the equivalent to adding a table  to mySQL
+        mongoose.Schema
+8:43:
+    Going over controllers
+        import module in here
+        
