@@ -1,0 +1,15 @@
+Lecture: MongoDB & Mongoose
+8:23:
+    Why we modularize
+8:26:
+    Starting the project
+8:40:
+    Building the controller
+        Controller is our functionality where we do CRUD
+8:47:
+    Creating the routes
+
+
+Readings:
+
+db.dropDatabase() - drops the database you are currently in
