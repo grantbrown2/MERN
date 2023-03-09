@@ -1,0 +1,13 @@
+Lecture: Going over CRUD
+8:07:
+    Overview of the modularization
+8:19:
+    Read One
+8:34:
+    Going over req.params.id
+        basically equivalent to db.collection.find({_id : "id_number"}) but takes in the parameter
+8:50:
+    Going over update 
+        req.body is the new values you are sending
+8:59:
+    explaining runValidators: true
