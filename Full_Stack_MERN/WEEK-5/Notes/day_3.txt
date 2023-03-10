@@ -1,0 +1,7 @@
+Readings: Went over how to start a full stack application with the back end.
+
+Activity Hour: Going over jokes API
+
+Lecture: Building full stack backend team manager
+8:50:
+    Going over the update part I missed
