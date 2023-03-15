@@ -1,0 +1,10 @@
+Lecture: What is cors? & going over front end full stack
+8:10:
+    going over week-5-day-3 material
+8:14:
+    intro to cors
+        allows two servers on different ports to send information to each other
+8:20:
+    Building the components for team manager
+8:33:
+    how to add database to the component
