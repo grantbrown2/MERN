@@ -1,0 +1,125 @@
+.App {
+  text-align: center;
+}
+.container {
+  width: 50%;
+  margin: auto;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 20px auto;
+  max-width: 500px;
+}
+label {
+  font-weight: bold;
+  margin-right: 10px;
+  width: 200px;
+  display: inline-block;
+}
+input[type="text"],
+input[type="number"] {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  flex: 1;
+}
+input[type="submit"] {
+  padding: 10px 20px;
+  margin: 10px auto;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+.container-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 500px;
+}
+div a {
+  display: block;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+}
+div a:hover {
+  background-color: #f2f2f2;
+}
+.container-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px auto;
+  max-width: 300px;
+}
+.container-3 span {
+  margin: 5px;
+}
+.container-3 span:first-child {
+  font-size: 24px;
+  font-weight: bold;
+}
+.container-3 span:nth-child(2) {
+  font-size: 18px;
+}
+.container-3 span:nth-child(3) {
+  font-size: 16px;
+  color: #777;
+}
+div.product-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+div.product-container a {
+  display: inline-block;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+}
+
+div.product-container a:hover {
+  background-color: #f2f2f2;
+}
+button {
+  display: inline-block;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #fd0101;
+}
