@@ -1,0 +1,3 @@
+Lecture: More full stack information
+8:48:
+    going over the OneProduct aka the parent child relationship and lifting state
