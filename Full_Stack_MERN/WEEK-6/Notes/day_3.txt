@@ -1,0 +1,20 @@
+Full stack data flow:
+    server side:
+        server routes determine what controller to pull information from when user visits desired path
+        controllers hold all of the database queries and set them using request data from a from
+        a model holds the information for the schema/this is where you choose what should be entered into a table
+    client side:
+        App.js loads all of the components when needed/ when a path is choosen 
+        a component houses the html you want to pass to the webpage
+        a view is when you want to "lift state" to another child component, in other words -
+        - Main.jsx is resonsible for when you add a product, it instantly shows up in our list component instead of having to refresh
+
+
+Activity Hour: Going over update on the show one component
+7:22:
+    continuing going over update from last nights lecture
+
+
+Lecture: going over exam details & deployment process
+8:37:
+    Deployment Process
