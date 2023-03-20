@@ -1,6 +1,5 @@
 const mongoose = require('mongoose');
-
-mongoose.connect("mongodb://127.0.0.1:27017/team_manager_db", { 
+mongoose.connect("mongodb://127.0.0.1:27017/team-manager", { 
     useNewUrlParser: true, 
     useUnifiedTopology: true,
 })
