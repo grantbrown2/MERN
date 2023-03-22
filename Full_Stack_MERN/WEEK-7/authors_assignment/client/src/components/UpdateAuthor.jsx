@@ -9,7 +9,7 @@ const UpdateAuthor = () => {
     const [name, setName] = useState();
     const navigate = useNavigate();
 
-    const [error, setError] = useState();
+    const [errors, setErrors] = useState([]);
 
     useEffect(()=> {
         axios.get(`http://localhost:8000/${id}`)
@@ -24,9 +24,14 @@ const UpdateAuthor = () => {
                 console.log(res);
                 navigate('/');
             })
-            .catch(err => {
-                setError(err.response.data.error);
-                console.log(err);
+            .catch(err=>{
+                const errorResponse = err.response.data.errors; // Get the errors from err.response.data
+                const errorArr = []; // Define a temp error array to push the messages in
+                for (const key of Object.keys(errorResponse)) { // Loop through all errors and get the messages
+                    errorArr.push(errorResponse[key].message)
+                }
+                // Set Errors
+                setErrors(errorArr);
             });
     }
 
@@ -34,10 +39,10 @@ const UpdateAuthor = () => {
         <div className='author-list'>
             <Link to={'/'}>Home</Link>
             <p>Edit this author:</p>
-            {error && <p>{error}</p>}
             <form onSubmit={updatedAuthor}>
                 <label htmlFor="name">Name:</label>
                 <input name='name' value={name} type="text" onChange={(e)=>{setName(e.target.value);}}/>
+                {errors.map((err, index) => <p key={index}>{err}</p>)}
                 <div className='button'>
                     <Link to={"/"} className='cancel-button'>Cancel</Link>
                     <input type="submit" value="Submit" className='submit-button' />

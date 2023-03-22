@@ -19,11 +19,14 @@ const AddAuthor = () => {
                 setAuthor([...author, res.data]);
                 navigate('/');
             })
-            .catch(err => {
-                if (err.response && err.response.status === 400) {
-                    const errorArr = Object.values(err.response.data.errors).map(val => val.message);
-                    setErrors(errorArr);
+            .catch(err=>{
+                const errorResponse = err.response.data.errors; // Get the errors from err.response.data
+                const errorArr = []; // Define a temp error array to push the messages in
+                for (const key of Object.keys(errorResponse)) { // Loop through all errors and get the messages
+                    errorArr.push(errorResponse[key].message)
                 }
+                // Set Errors
+                setErrors(errorArr);
             });
     }
 
@@ -34,9 +37,7 @@ const AddAuthor = () => {
             <form onSubmit={handleSubmit}>
                 <label htmlFor="name">Name:</label>
                 <input type="text" onChange={(e)=>{setName(e.target.value);}}/>
-                {errors.map((error, index) => (
-                <div key={index} className='errors'>{error}</div>
-                ))}
+                {errors.map((err, index) => <p key={index}>{err}</p>)}
                 <div className='button'>
                     <Link to={"/"} className='cancel-button'>Cancel</Link>
                     <input type="submit" value="Submit" className='submit-button' />
