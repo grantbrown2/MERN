@@ -9,32 +9,36 @@ const AddPlayer = () => {
     const [playerName, setPlayerName] = useState('');
     const [role, setRole] = useState('');
 
-    const [isValid, setIsValid] = useState(false);
+    // const [isValid, setIsValid] = useState(false);
     const [errorMessage, setErrorMessage] = useState('');
     
     const navigate = useNavigate();
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:8000/players/add', {
-            playerName,
-            role
-        })
-            .then(res => {
-                setPlayer([...player, res.data]);
-                navigate('/players/list');
+        if (validation()) {
+            console.log("test")
+            axios.post('http://localhost:8000/players/add', {
+                playerName,
+                role
             })
-            .catch(err => console.log(err))
+                .then(res => {
+                    setPlayer([...player, res.data]);
+                    navigate('/players/list');
+                })
+                .catch(err => console.log(err))
+        } else {
+            navigate('/players/add')
+        }
     }
 
     const validation = () => {
-        if (playerName.length >= 2) {
-            setIsValid(true);
-            setErrorMessage('');
-        } else {
-            setIsValid(false);
-            setErrorMessage('Player name must be at least 2 characters long!')
+        let isValid = true
+        if (playerName.length < 2) {
+            isValid = false
+            setErrorMessage('Player name must be at least 2 characters!');
         }
+        return isValid
     }
 
     return (
@@ -51,10 +55,9 @@ const AddPlayer = () => {
                 <label htmlFor="role">Preferred Position: </label>
                 <input type="text" onChange={(e) => {
                     setRole(e.target.value);
-                    validation();
                 }}/>
             </div>
-            <input type="submit" value='Add'disabled={!isValid}/>
+            <input type="submit" value='Add'/>
         </form>
     )
 }
